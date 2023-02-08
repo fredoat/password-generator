@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #000;
+	color: whitesmoke;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h1 {
+	margin: 10px 0 20px;
+	text-align: center;
+	padding: 10px;
+	border-width: 100px;
+	border-bottom: 1px solid rgb(1, 158, 67);
+	/* text-decoration: underline; */
+}
+
+input[type='number'] {
+	font-size: 17px;
+	background: none;
+	color: whitesmoke;
+	border: 1px solid rgb(1, 158, 67);
+	padding: 5px;
+}
+
+input[type='number']:focus {
+	outline: none !important;
+	box-shadow: 0 0 10px rgb(1, 158, 67);
+}
+
+input[type='checkbox'] {
+	margin-right: 0;
+	width: 40px;
+	height: 30px;
+	font-size: larger;
+	color: rgb(1, 158, 67);
+}
+
+.container {
+	background-color: rgb(39, 39, 39);
+	box-shadow: 0px 0px 100px rgb(1, 158, 67);
+	padding: 20px;
+	width: 450px;
+	max-width: 100%;
+}
+
+.result-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.result-container #result {
+	word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background: none;
+	border: 1.5px solid rgb(1, 158, 67);
+	transition: .5s;
+	border-radius: 10% / 50%;
+}
+
+.btn:hover {
+	background-color: rgb(1, 158, 67);
+}
+
+.btn.btn-large:focus {
+	outline: 0;
+}
+
+.btn-large {
+	display: block;
+	width: 100%;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+	font-size: 19px;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------- Nav Start --------------------- */
+/* ----------------------------------------------------------- */
+
+#nav {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 120px;
+}
+
+#grafiti-img {
+	width: 60px;
+	border-radius: 80%;
+}
+
+#logo:after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	/* Underline color of anchor tag */
+	background: rgb(1, 158, 67);
+	transition: 300ms;
+	color: rgb(1, 158, 67);
+}
+
+#logo:hover:after {
+	text-align: center;
+	content: 'Home';
+	width: 100%;
+	transition: 500ms;
+}
+
+#logo-li {
+	margin: auto auto auto 50px;
+}
+
+@media screen and (max-width: 643px) {
+	#logo-li {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 515px) {
+	#logo-li {
+		margin: auto;
+	}
+}
+
+.nav-links li {
+	margin-left: 30px;
+}
+
+.nav-links li .btn {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+#twitter-li {
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 643px) {
+	#twitter-li {
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 515px) {
+	#twitter-li {
+		margin-right: auto;
+	}
+}
+
+#nav ul {
+	/* Make's list items in a single row */
+	display: flex;
+	list-style-type: none;
+	/* Ul 50% of the nav */
+	width: 100%;
+	/* Ul 100% of the nav height */
+	height: 100%;
+	/* Horizontally aligns li */
+	justify-content: space-around;
+	/* Veritcally aligns li */
+	align-items: center;
+}
+
+
+/* ----------------------------------------------------------- */
+/* -------------------- Nav  End --------------------- */
+/* ----------------------------------------------------------- */
